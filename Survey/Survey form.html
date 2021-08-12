@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Survey form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            #description{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            #container{
+                margin-left: 30%;
+                background-color: rgb(122, 122, 236);
+                margin-right: 30%;
+                padding-left: 3%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            
+
+            }
+            body{
+                background-color: cadetblue;
+                
+            }
+
+            #name,#number, #email{
+            width: 90%;
+            margin-bottom: 10px;
+            height: 25px;
+            }
+            #name-label, #email-label, #number-label{
+                margin-bottom: 5px;
+            }
+
+            input{
+                margin-top: 3px;
+                padding: 3px;
+        
+        
+        
+            }
+
+            textarea{
+                height: 80px;
+                width: 90%;
+            }
+            #submit{
+                height: 30px;
+                background-color: darkblue;
+                width: 92%;
+            }
+            #dropdown,#dropdown1{
+                width: 92%;
+                height: 35px;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 3px;
+            }
+            @media only screen and ( max-width: 800px ){
+                #container{
+                margin-left: 3%;
+                background-color: rgb(122, 122, 236);
+                margin-right: 3%;
+                padding-left: 5%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                }
+            
+            
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1 id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            <em> Thank you for taking the time to help us improve the platform</em> 
+        </p>
+        <div id= "container">
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label> <br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label id="email-label" for="email">Email</label> <br>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <br>
+            <label id="number-label" for="number">Age(Optional)</label> <br>
+            <input type="number" id="number" min="16" step="1" max="30" placeholder="Age">  
+            <br>
+           <p> Which option best describes your current role?</p> 
+            <select id="dropdown"> 
+            
+                <option value="" disabled selected> Select current role</option>
+                <option > Student </option>
+                <option value="job"> full-time job</option>
+                <option value="learner"> full-time learner</option>
+                <option value="not-to-say"> Prefer not to say </option>
+                <option value="other"> Other</option>
+
+            </select>
+            <div>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" name="recommend" id="definitely" value="definitly" > <label for="definitely"> Definitely</label>
+                <br>
+                <input type="radio" name="recommend" id="maybe" value="maybe"> <label for="maybe"> Maybe</label>
+                <br>
+                <input type="radio" name="recommend" id="no" value="not sure"> <label for="no"> Not sure</label>
+            
+            </div>
+            <div>
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select id="dropdown1">
+                    <option value="" disabled selected> Select an option</option>
+                    <option value="">Challenges</option>
+                    <option value="">Projects</option>
+                    <option value="">Community</option>
+                    <option value="">Open-source</option>
+                </select>
+            </div>
+            
+            <div>
+
+                <p>  What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" name="improve" id="back" value="Back-endProjects">  <label for="back">  Back-end Projects  </label>
+                <br>
+                <input type="checkbox" name="improve" id="data" value="Data-Visualization ">  <label for="data"> Data Visualization </label>
+                <br>
+                <input type="checkbox" name="improve" id="challenges" value="Challenges">  <label for="challenges"> Challenges </label>
+                <br>
+                <input type="checkbox" name="improve" id="open" value="Open-Source-Community" >   <label for="open" > Open Source Community </label>
+                <br>
+                <input type="checkbox" name="improve" id="rooms" value="Gitter-help-rooms" >  <label for="rooms"> Gitter help rooms </label>
+                <br>
+                <input type="checkbox" name="improve" id="vodeos" value="Videos">  <label for="vodeos"> Videos </label>
+                <br>
+                <input type="checkbox" name="improve" id="city" value="City-Meetups">  <label for="city"> City Meetups </label>
+                <br>
+                <input type="checkbox" name="improve" id="wiki" value="Wiki">  <label for="wiki"> Wiki </label>
+                <br>
+                <input type="checkbox" name="improve" id="forum" value="Forum">  <label for="forum"> Forum </label>
+                <br>
+                <input type="checkbox" name="improve" id="courses" value="Additional-Courses "> <label for="courses"> Additional Courses </label>
+                
+            </div>
+            <div>
+                <p>Any comments or suggestions?</p>
+                <textarea> Enter your comments here...</textarea>
+            </div>
+            <button id="submit"> Submit</button>
+        </form>
+
+        </body>
+        </div>
+</html>

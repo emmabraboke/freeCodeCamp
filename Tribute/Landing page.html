@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Landing Page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+        body{
+        background-color: rgba(255, 255, 255, 0.788);
+        margin: 5px 0 0 0;
+        }   
+        header p{
+            display: inline;
+        }
+
+        header{
+            padding-top: 4px;
+            margin-bottom: 30px;
+        }
+        #nav-bar{
+            float: right;
+    
+        }
+        #nav-bar a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #form{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #form p{
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #submit{
+            margin-top: 10px;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #form input{
+            width:200px;
+        }
+
+        #terms{
+            margin-left: 200px;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            text-align: center;
+            margin-left: 15%;
+            margin-bottom: 50px;
+        }
+        #container div{
+            border: solid 1px;
+            
+            width: 30%;
+        
+    
+        }
+        
+            #container button{
+            margin-top: 30px;
+            background-color: yellow;
+            max-width: 70%;
+            margin-bottom: 5%;
+            word-break: break-all;
+        }
+        #container p{
+            background-color: gray;
+            margin-top: 0px;
+            font-weight: bold;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            word-wrap: break-word;
+        }
+
+        footer{
+            background-color: rgb(224, 222, 222);
+            width: 100%;
+            height: 100px;
+        }
+        footer a{
+            float:right;
+            padding: 10px;
+            text-decoration: none;
+            color: black
+            
+        }
+        footer p{
+            float: right;
+            clear: right;
+            margin-bottom: 5px;
+            padding-right: 10px;
+        } 
+        #video{
+
+            margin: 30px 40% 40px 40%;
+        }
+        @media only screen  and (max-width: 700px) {
+            body{
+            text-align: center;
+        }
+            header{
+            text-align: center;
+            }
+        #nav-bar{
+            margin-top: 30px;
+            /* margin-bottom: 100px; */
+            float: none;
+        }
+        #nav-bar a {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: black;
+            
+        } 
+        #form{
+            margin-top: 20px;
+    
+        }
+        #terms{
+            margin-left: unset;
+        }
+        #container{
+            display: flex;
+            row-gap: 10px;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+            margin-top: 80px;
+            width: 100%;
+            margin-left: unset;
+        }
+
+        #container div{
+            border: solid 1px;
+            width: 70%;
+        }
+        #video{
+            margin: unset;
+            width: 100%;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img src="trumpent.png" id="header-img">
+            <p>Original Thrombones</p>
+            
+            <nav id="nav-bar">
+                <a href="#terms" class="nav-link"> Features </a>
+                <a href="#video" class="nav-link">How it Works</a>
+                <a href="#container" class="nav-link">Pricing</a>
+            </nav>
+        </header>
+       
+       
+       <form action="https://www.freecodecamp.com/email-submit" id="form">
+           <p>Handcraft, home-made masterpieces</p> 
+           <input type="email" id="email" placeholder="Enter your email address" name="email" required> <br>
+           <input id="submit" value="GET STARTED" type="submit">
+       </form>
+       <div  id="terms">
+           <p> <strong> Premium Materials </strong> <br>
+            Our trombones use the shinest brass which is sourced locally. This will increase the longetivty of your purchase </p>
+       </div>
+       <div id=terms>
+           <p> <strong> Fast Shipping</strong> <br> 
+         We make you receivev your trombone as soon as we have finish making it. We also provide free return if you are not satisfied</p>
+       </div>
+       <div id="terms">
+           <p>
+            <strong>Quality Assurance </strong><br>
+               For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument
+           </p>
+       </div>
+    
+       <iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" id="video"> </iframe>
+
+       <div id="container">
+        <div> <p>TENOR TROMBONE</p>
+            <strong>$600</strong> <br> 
+            Lorem ipsum. <br> Lorem ipsum.<br> Lorem ipsum dolor.<br> Lorem ipsum.<br>
+           <button>SELECT</button> 
+            </div>
+            <div>
+            <p>BASS TROMBONE </p>
+            <strong>$900</strong><br>
+            Lorem ipsum. <br> Lorem ipsum.<br> Lorem ipsum dolor.<br> Lorem ipsum.<br>
+            <button>SELECT</button> 
+             </div>
+           <div> 
+            <p>VALVE TROMBONE</p> 
+             <strong>$1200</strong><br>
+            Plays similar to a Trumpet <br>
+            Great for Jazz Bands <br>
+            Lorem ipsum dolor. <br>
+            Lorem ipsum. <br>
+            <button> SELECT</button> 
+        </div>
+           
+
+       </div>
+    <footer>
+        <nav> 
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </nav>
+     <p>Copyright 2016, Original Trombones</p>
+    </footer>
+    </body>
+</html>
