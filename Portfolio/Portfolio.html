@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+        html,body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #navbar{
+            position: fixed;
+            top: 0;
+            background-color: rgb(219, 80, 80);
+            width: 100%;
+            height: auto;
+            padding-right: 50px;
+            margin-top: 0;
+            
+        
+            /* float: right; */
+        }
+        #nav div{
+            float: right;
+            /* width: 100%; */
+            margin-right: 50px;
+        }
+        #navbar a{
+            float: right;
+            padding: 25px 30px 25px 0;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            
+        }
+
+
+
+        #welcome-section{
+            padding: 0;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(59, 57, 57);
+            
+        }
+
+        #welcome-section h1{
+            padding-top: 300px;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            font-family: 'Archivo Black', sans-serif;
+          
+        }
+        #welcome-section h2{
+            text-align: center;
+            color: red;
+            font-style: italic;
+            font-weight: 300;
+        }
+        #projects{
+            padding-top: 60px;
+            background-color: rgb(109, 109, 209);
+            height: auto;
+        }
+
+        #projects h1{
+        border-bottom: solid 2px white;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        width: 400px;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 7px;
+        margin-bottom: 40px;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 27% 27%;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            gap: 30px 20px;
+        }
+
+        #container div img{
+            display: block;
+            width: 100%;
+            height: 300px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            
+
+
+        }
+        #container div p{
+            color:white;
+            background-color: rgb(59, 51, 51);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 0;
+            text-align: center;
+
+        }
+
+        #contact-section{
+            color: white;
+            background-color: rgb(36, 36, 44);
+            padding-top: 150px;
+            text-align: center;
+        }
+
+        #contact-section h1{
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+
+        #contact-section h2{
+            font-size: 15px;
+            font-style: italic;
+            font-weight: lighter;
+            
+        }
+ 
+         
+        #contact{
+            margin-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        #contact a{
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+            
+        }
+
+
+        @media only screen  and (max-width: 700px){
+
+            #container{
+            display: grid;
+            grid-template-columns: 70%;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            gap: 30px 20px;
+            }
+
+            #container div img{
+            display: block;
+            width: 100%;
+            height: 400px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            
+        
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+            <div>
+               <a href="#">About</a> 
+               <a href="#projects">Work</a> 
+               <a href="#contact">Contact</a> 
+            </div>
+        </nav>
+    <section id="welcome-section">
+        <h1>
+            Hey I am Emmanuel
+        </h1>
+        <h2>a web developer</h2>
+    </section>
+
+    <section id="projects">
+        <h1>These are some projects</h1>
+    <div id="container">
+    <div class="project-tile">
+        <a href=""><label> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt=""><p>Tribute Page</p></label></a>
+    </div>
+    <div class="project-tile">
+        <a href=""> <label> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt=""><p>Javascript Calculator</p></label></a>
+    </div>
+    <div class="project-tile">
+        <a href=""><label> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt=""><p>Wikipedia Viewer</p></label></a>
+    </div>
+    <div class="project-tile">
+        <a href=""><label> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png "  alt=""><p>Random Quote Machine</p></label></a>
+    </div>
+     
+    </div>
+
+    </section>
+
+    <section id="contact-section">
+    <h1>Let's work together...</h1>
+    <h2>How do you take your coffee?</h2>
+    <div id="contact">
+        
+        <a href="https://github.com/emmabraboke" id="profile-link" target="_blank"> <label><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg> GitHub</span></label></a>
+        <a href="mailto:emmabraboke@gmail.com" > <label><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+            <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+          </svg> Email</label></a>
+        <a href="tel:234 8138 565 927"> <label><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg> Call</label></a>
+    </div>
+    </section>
+
+    
+    
+</body>
+</html>
